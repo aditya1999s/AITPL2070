@@ -10,3 +10,7 @@ for i in range(1, int(n)):
 pos_nos = list(filter(lambda x: (x > 0), li))
 
 print("Positive numbers in the list: ", *pos_nos)
+
+pos_nos1 = list(filter(lambda x: (x < 0), li))
+
+print("Negative numbers in the list: ", *pos_nos1)
