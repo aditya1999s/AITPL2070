@@ -1,5 +1,5 @@
 # Program to perform arithmetic operation menu driven approach
-# Program to check positive number in a list without using if else while
+
 
 def ar():
     print("1. Press 1. for addition\n2. Press 2. for subtrction"
