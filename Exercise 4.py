@@ -19,10 +19,10 @@ def select():
     c.close()
     con.close()
 
-# data1 = c.fetchall()
-# print(data1)
-# c.close()
-# con.close()
+    # data1 = c.fetchall()
+    # print(data1)
+    # c.close()
+    # con.close()
 while True:
     print("Press 1. to create database\nPress 2. to print the data\nPress 3. for exit")
     ch = int(input("Enter your choice : "))
