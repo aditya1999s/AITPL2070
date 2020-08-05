@@ -5,7 +5,7 @@
 print("1. Press 1 for string palindrome\n2. Press for words sorting alphabetically\n"
       "3. Press 3 for largest among three numbers\n4. Press 4 to find 2nd &4th largest number \n"
       "5. Press 5 for largst number in the list\n6. Press 6 for prime number\n7. Press 7 to find prime number n given range\n"
-      "8. Press 8 to print pyramid of number\n9. Press 9 to print pyramid of 0 and 1 ")
+      "8. Press 8 to print pyramid of number\n9. Press 9 to print pyramid of 0 and 1\n10. Press 10 to  check the positive number in list ")
 
 i = int(input("enter your choice : "))
 
@@ -98,5 +98,12 @@ elif i == 9:
         print("\n")
 
 elif i == 10:
-    x, y, z = input("Please enter three numbers : ").split()
-    print("value of x is : {0} and value of y is : {1} and addition of : {0} and {1} is : {2}".format(x, y, z))
+    li = []
+    n = input("enter length : ")
+    for i in range(1, int(n)):
+        k = int(input("enter value : "))
+        li.append(k)
+    # we can also print positive no's using lambda exp.
+    pos_nos = list(filter(lambda x: (x > 0), li))
+
+    print("Positive numbers in the list: ", *pos_nos)
